@@ -128,6 +128,26 @@ img{max-width:100%;display:block}
 .pain .a-l{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:700;margin-top:4px}
 .pain .a{font-size:15px;color:var(--ink-2)}
 
+
+/* benefits */
+.ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:860px){.ba{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.bt{background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:20px 18px;display:grid;gap:6px;align-content:start}
+.bt svg{width:26px;height:26px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:4px}
+.bt .k{font-size:12px;color:var(--ink-3)}
+.bt .v{font-family:var(--serif);font-size:clamp(17px,1.9vw,21px);font-weight:600;line-height:1.35}
+.bt .v s{color:var(--ink-3);font-weight:500;font-family:var(--sans);font-size:.85em;margin-right:4px}
+.bt .d{font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.loop{margin:36px 0 0;background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:22px 18px 14px}
+.loop svg{width:100%;max-width:800px;height:auto;display:block;margin:0 auto;color:var(--ink-2)}
+.lp-nodes rect{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.lp-nodes rect.lp-hl{fill:var(--accent-soft);stroke:var(--accent)}
+.lp-t{fill:var(--ink);font-size:14px;font-weight:700;font-family:var(--sans)}
+.lp-s{fill:var(--ink-3);font-size:10.5px;font-family:var(--sans)}
+.lp-edges{fill:none;stroke:var(--ink-2);stroke-width:1.8}
+.lp-cap{fill:var(--accent-ink);font-size:12px;font-weight:700;font-family:var(--sans)}
+.loop figcaption{font-size:13px;color:var(--ink-2);margin-top:12px;text-align:center}
+
 /* pillars */
 .pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 @media (min-width:860px){.pillars{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
@@ -173,7 +193,8 @@ img{max-width:100%;display:block}
 
 /* flow (4 layers) */
 .flow{display:grid;gap:10px}
-@media (min-width:860px){.flow{grid-template-columns:repeat(7,auto);grid-template-columns:1fr 20px 1fr 20px 1fr 20px 1fr;align-items:stretch}}
+@media (min-width:860px){.flow{grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr 18px 1fr;align-items:stretch}}
+@media (min-width:860px){.lay{padding:18px 14px}.lay .t{font-size:17px}}
 .lay{background:var(--bg-2);border:1px solid var(--line);border-radius:6px;padding:20px 18px;display:grid;gap:6px;align-content:start}
 .lay .no{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:600;letter-spacing:.1em}
 .lay .t{font-family:var(--serif);font-size:19px;font-weight:600}
@@ -313,7 +334,7 @@ details.tbl td,details.tbl th{padding:4px 12px 4px 0;text-align:right;border-bot
   <div class="wrap">
     <a class="brand" href="#top" aria-label="サロン運営ゆとり研究所"><b>サロン運営ゆとり研究所</b><span>グローバルタッチ株式会社</span></a>
     <nav class="nav" aria-label="ページ内">
-      <a href="#service">事業</a><a href="#growth">導入後の推移</a><a href="#results">実績</a><a href="#pricing">料金</a><a href="#company">会社概要</a><a href="#contact">お問い合わせ</a>
+      <a href="#service">事業</a><a href="#benefit">何が変わるか</a><a href="#growth">導入後の推移</a><a href="#results">実績</a><a href="#pricing">料金</a><a href="#company">会社概要</a><a href="#contact">お問い合わせ</a>
     </nav>
     <a class="btn btn-p btn-sm" href="#contact">相談する</a>
   </div>
@@ -455,6 +476,9 @@ details.tbl td,details.tbl th{padding:4px 12px 4px 0;text-align:right;border-bot
           <li>初回オファー専用のランディングページ</li>
           <li>店名義の広告アカウントでのMeta広告運用(制作・入稿・日次監視)</li>
           <li>4週リタッチ価格・次回予約割引・LINE公式・1行カルテの設計</li>
+          <li>次回予約の告知POP・カウンセリングシート・季節の単価アップPOP</li>
+          <li>Googleマップ(ビジネスプロフィール)の添削と口コミが増える導線</li>
+          <li>店内オペレーションの添削(受付から会計まで、常連になる流れに)</li>
           <li>月末の1枚レポートと、月1回のオーナー面談(30分)</li>
         </ul>
         <p class="price">事例価格(先着3店) 初期費用0円 / 月額 <b>¥30,000</b><span style="font-size:13px"> + 広告費実費</span></p>
@@ -476,12 +500,51 @@ details.tbl td,details.tbl th{padding:4px 12px 4px 0;text-align:right;border-bot
   </div>
 </section>
 
+<section class="sec" id="benefit">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow-ja">お願いすると、何が変わるか</p>
+      <h2>オーナーの手元に残るのは、時間と、お金と、お客様。</h2>
+      <p>自店で起きた変化を、オーナーの側から見るとこうなります。</p>
+    </div>
+    <div class="ba">
+      <div class="bt"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="k">運営に使う時間</span><span class="v"><s>週15時間</s>→ 月30分</span><span class="d">HP更新・広告・レポートはAIと当社。オーナーは月1回の確認と施術後の1行カルテだけ</span></div>
+      <div class="bt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l6 7 6-7M12 11v9M8 14h8M8 17h8"/></svg><span class="k">集客に払うお金</span><span class="v"><s>ポータル 月5〜30万</s>→ 月6.5万</span><span class="d">月額3万+広告費3.5万以内。上限が決まっていて、売上が上がっても増えない</span></div>
+      <div class="bt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span class="k">お客様がいる場所</span><span class="v"><s>ポータルの会員</s>→ 自分の店</span><span class="d">HP・LINE・カルテに、店の資産として積み上がる。やめても残る</span></div>
+      <div class="bt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></svg><span class="k">売上</span><span class="v"><s>100万</s>→ 150万</span><span class="d">同じ席数、同じ人数のまま。リピート率60%→90%以上で積み上がる</span></div>
+    </div>
+    <figure class="loop">
+      <svg viewBox="0 0 800 300" role="img" aria-label="常連づくりの循環: 広告で新規が来て、初回にカウンセリングシートで次回予約が入り、4週リタッチで常連になり、常連がGoogleマップに口コミを書き、その口コミが次の新規を連れてくる">
+        <defs><marker id="lp-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+        <g class="lp-nodes">
+          <rect x="20" y="110" width="150" height="80" rx="8"/><text x="95" y="142" text-anchor="middle" class="lp-t">新規が来る</text><text x="95" y="164" text-anchor="middle" class="lp-s">地域広告・HP・LP</text>
+          <rect x="200" y="110" width="150" height="80" rx="8"/><text x="275" y="142" text-anchor="middle" class="lp-t">初回来店</text><text x="275" y="164" text-anchor="middle" class="lp-s">カウンセリングシート</text>
+          <rect x="380" y="110" width="150" height="80" rx="8"/><text x="455" y="142" text-anchor="middle" class="lp-t">次回予約が入る</text><text x="455" y="164" text-anchor="middle" class="lp-s">告知POP・4週リタッチ</text>
+          <rect x="560" y="110" width="150" height="80" rx="8" class="lp-hl"/><text x="635" y="142" text-anchor="middle" class="lp-t">常連になる</text><text x="635" y="164" text-anchor="middle" class="lp-s">カルテ・LINE・季節POP</text>
+          <rect x="305" y="225" width="190" height="56" rx="8"/><text x="400" y="250" text-anchor="middle" class="lp-t">口コミが増える</text><text x="400" y="270" text-anchor="middle" class="lp-s">Googleマップの添削と導線</text>
+        </g>
+        <g class="lp-edges" marker-end="url(#lp-arrow)">
+          <line x1="170" y1="150" x2="198" y2="150"/>
+          <line x1="350" y1="150" x2="378" y2="150"/>
+          <line x1="530" y1="150" x2="558" y2="150"/>
+          <path d="M635 190 L635 253 L497 253"/>
+          <path d="M305 253 L95 253 L95 192"/>
+          <path d="M275 82 L275 106"/>
+        </g>
+        <text x="275" y="72" text-anchor="middle" class="lp-cap">多くの店はここで終わる</text>
+        <text x="200" y="278" text-anchor="middle" class="lp-cap">口コミが次の新規を連れてくる</text>
+      </svg>
+      <figcaption>常連づくりは一方通行ではなく循環です。次回予約とGoogleマップの口コミまで設計して、初めて広告費を増やさずに新規が入り続けます。</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section class="sec" id="layers">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow-ja">常連づくりの中身</p>
-      <h2>4つの層を、一式で入れる。</h2>
-      <p>広告だけなら新規は来ても残らず、HPだけなら誰にも見つかりません。4層を同時に動かして初めて、店にお客様が積み上がります。</p>
+      <h2>5つの層を、一式で入れる。</h2>
+      <p>広告だけなら新規は来ても残らず、HPだけなら誰にも見つかりません。次回予約を口頭で聞くだけでは、誰も入れません。口コミが増えなければ、新規はまた入りにくくなる。5層を同時に動かして初めて、店にお客様が積み上がります。</p>
     </div>
     <div class="flow">
       <div class="lay"><span class="no">01</span><span class="t">ホームページ</span><span class="d">自社予約導線つき。制作・公開・保守</span><span class="r">ポータルを経由しない予約の受け皿</span></div>
@@ -490,7 +553,9 @@ details.tbl td,details.tbl th{padding:4px 12px 4px 0;text-align:right;border-bot
       <div class="fa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M13 5l7 7-7 7"/></svg></div>
       <div class="lay"><span class="no">03</span><span class="t">地域広告</span><span class="d">店から1.5km・年齢層を絞ったMeta広告。制作から日次運用まで</span><span class="r">新規を安定して入れる</span></div>
       <div class="fa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M13 5l7 7-7 7"/></svg></div>
-      <div class="lay last"><span class="no">04</span><span class="t">定着導線</span><span class="d">4週リタッチ価格 / 次回予約割引 / LINE公式 / 1行カルテ</span><span class="r">初回のお客様を、通い続けるお客様に</span></div>
+      <div class="lay"><span class="no">04</span><span class="t">定着導線</span><span class="d">4週リタッチ価格 / 次回予約割引 / LINE公式 / 1行カルテ / 次回予約の告知POP / カウンセリングシート</span><span class="r">初回のお客様を、通い続けるお客様に</span></div>
+      <div class="fa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M13 5l7 7-7 7"/></svg></div>
+      <div class="lay last"><span class="no">05</span><span class="t">店内と口コミ</span><span class="d">Googleマップの添削と口コミ導線 / 季節の単価アップPOP / 受付から会計までのオペレーション添削</span><span class="r">常連が口コミを書き、次の新規を連れてくる</span></div>
     </div>
   </div>
 </section>
@@ -521,7 +586,7 @@ details.tbl td,details.tbl th{padding:4px 12px 4px 0;text-align:right;border-bot
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow-ja">なぜ「研究所」なのか</p>
-      <h2>去年の正解は、今年の正解ではない。だから研究し続ける。</h2>
+      <h2>去年の正解が今年の正解ではない早い時代。だから研究し続ける。</h2>
       <p>広告の出し方も、お客様の探し方も、現場への落とし込み方も、1年で変わります。当社は自店を実験場にして、効いたものだけを納品先の店に入れ、効かなくなったものは入れ替えます。納品して終わりではなく、更新し続ける契約です。</p>
     </div>
     <div class="why">
@@ -618,7 +683,6 @@ details.tbl td,details.tbl th{padding:4px 12px 4px 0;text-align:right;border-bot
         <li>2026年より店の運営をAIで組み替え、同じ体制で月商1.5倍・リピート率90%以上</li>
         <li>X @KotaShimomura で「AI×美容師」の実践を発信</li>
       </ul>
-      <div class="cut"><img src="data:image/jpeg;base64,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" alt="施術中の手元" width="260" height="194"></div>
     </div>
     <div class="msg">
       <p class="eyebrow-ja">代表から</p>
